@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [ "FZ5M457J8F.qollabs-answerlog" ],
+        "components": [
+          {
+            "/": "/answerlog/*"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [ "FZ5M457J8F.qollabs-answerlog" ]
+  }
+}
