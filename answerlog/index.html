@@ -4,10 +4,28 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="refresh" content="0;URL='https://play.google.com/store/apps/details?id=com.sabuzak_m'" />
 	<title>answerlog</title>
 </head>
 <body>
-  <p>this is answerlog application bridge page</p>
+  	<p>this is answerlog application bridge page</p>
+	<script>
+		const params = new URL(location).searchParams;
+		const utm_campaign = params.get('utm_campaign');
+		const utm_source = params.get('utm_source');
+		const utm_medium = params.get('utm_medium');
+		
+		const varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+		if ( varUA.indexOf('android') > -1) { // android
+			window.location.href = 'https://play.google.com/store/apps/details?id=com.sabuzak_m'
+			+ '&utm_campaign=' + utm_campaign
+			+ '&utm_source=' + utm_source
+			+ '&utm_medium=' + utm_medium;
+		} else if ( varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 ||varUA.indexOf("ipod") > -1 ) {
+			//IOS
+		} else {
+			console.log('maybe from non-mobile browser');
+			console.log(varUA);
+		}
+  	</script>
 </body>
 </html>
