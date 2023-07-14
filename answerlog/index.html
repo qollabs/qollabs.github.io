@@ -21,8 +21,11 @@
 				+ '&utm_campaign=' + utm_campaign
 				+ '&utm_source=' + utm_source
 				+ '&utm_medium=' + utm_medium;
-		} else if ( varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 ||varUA.indexOf("ipod") > -1 ) {
-			// iOS
+		} else if ( varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 ||varUA.indexOf("ipod") > -1 ) { // iOS
+			window.location.href = 'market://details?id=qollabs-answerlog'
+				+ '&utm_campaign=' + utm_campaign
+				+ '&utm_source=' + utm_source
+				+ '&utm_medium=' + utm_medium;
 		} else {
 			console.log('maybe from non-mobile browser');
 			console.log(varUA);
