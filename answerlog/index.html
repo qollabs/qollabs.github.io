@@ -29,7 +29,7 @@
 		if ( utm_source === 'cafe' && utm_medium === 'shop_pop' && utm_campaign === '2024_NS_cafe' ) {
 			console.log('Access via QR code');
 			alert("Access via QR code");
-			window.location.href = 'answerlog://coupon?coupon_id=3D65c43450a3fa72571ce6b317';
+			window.location.href = 'answerlog://coupon?coupon_id%3D65c43450a3fa72571ce6b317';
 		} else if ( varUA.indexOf('android') > -1) { // android
 			window.location.href = 'https://play.google.com/store/apps/details?id=com.sabuzak_m'
 				+ '&utm_campaign=' + utm_campaign
