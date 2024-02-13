@@ -23,6 +23,10 @@
 		const utm_campaign = params.get('utm_campaign');
 		const utm_source = params.get('utm_source');
 		const utm_medium = params.get('utm_medium');
+
+		if ( utm_source === 'cafe' && utm_medium === 'shop_pop' && utm_campaign === '2024_NS_cafe' ) {
+			console.log('Access via QR code');
+		}
 		
 		const varUA = navigator.userAgent.toLowerCase(); // userAgent 값 얻기
 		if ( varUA.indexOf('android') > -1) { // android
